@@ -51,19 +51,3 @@ class ViewController: UIViewController {
 
 
 
-
-
-///print("\(readycolor)")
-//let selector = Selector(readycolor!)
-//let myColor = UIColor.self.perform(selector).takeUnretainedValue()
-//print(myColor)
-//backRound.backgroundColor = myColor as? UIColor
-//        let selector: Selector = NSSelectorFromString(readycolor)
-//        backRound.backgroundColor = perform(UIColor?.selector)
-//        let selector: Selector = NSSelectorFromString(readycolor)
-//        backround.backgroundColor = perform(UIColor.selector)
-
-///
-
-
-

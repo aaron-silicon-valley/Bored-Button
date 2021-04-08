@@ -14,14 +14,3 @@ struct Color {
 
 
 
-//let myColors: [String: UIColor] = [
-//    "red": .red,
-//    "white": .white,
-//    //...
-//    "turquoise": UIColorFromRGB(0x40E0D0),
-//    "mediumTurquoise": UIColorFromRGB(0x48D1CC),
-//]
-
-
-
-

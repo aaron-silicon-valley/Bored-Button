@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="boredbutton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rNM-8Q-blz">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81d-O1-D4P">
+                                <rect key="frame" x="120" y="347" width="188" height="232"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="AqU-db-jcQ"/>
+                                    <constraint firstAttribute="width" constant="150" id="i9P-xb-ace"/>
+                                </constraints>
+                                <state key="normal" title="Bored Button"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s3W-qa-cWK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rNM-8Q-blz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0Bo-WT-5cd"/>
+                            <constraint firstItem="rNM-8Q-blz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="71p-so-JS7"/>
+                            <constraint firstItem="rNM-8Q-blz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9la-Xi-GSC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="81d-O1-D4P" secondAttribute="bottom" constant="313" id="AdQ-gN-RDs"/>
+                            <constraint firstItem="81d-O1-D4P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="khq-3f-cGJ"/>
+                            <constraint firstItem="81d-O1-D4P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="303" id="pq9-1j-X1C"/>
+                            <constraint firstAttribute="bottom" secondItem="rNM-8Q-blz" secondAttribute="bottom" id="sac-wi-P4g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="81d-O1-D4P" secondAttribute="trailing" constant="120" id="v6W-St-kr4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backRound" destination="rNM-8Q-blz" id="PV3-MM-6NH"/>
+                        <outlet property="boredButton" destination="81d-O1-D4P" id="Hg8-jc-XVP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78.461538461538453" y="93.127962085308056"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
